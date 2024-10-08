@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery.min.js"></script>
+
+
+    <link href="tetris-uputstvo.css" rel="stylesheet">
+    <script src="tetris-uputstvo.js"></script>
+
+    <title>Tetris Uputstvo</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="button-group">
+                        <button type="button" class="btn btn-light btn-lg" id="showUputstvo">Uputstvo</button>
+                        <br>
+                        <button type="button" class="btn btn-light btn-lg" id="showPodesavanje" style="margin-top: 40px;">Podesavanje</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="logo">
+                    <img src="./tetris-dodatno/logo2.png">
+                </div>
+                <div id="naslov">
+                    <img src="./tetris-dodatno/naslov2.jpg">
+                </div>
+                <div id="uputstvo">
+                    <p>
+                        Blokovi sastavljeni od četiri kvadratića padaju s vrha polja za igru širokog deset,
+                        a visokog dvadeset kvadratića. Igrač ih može rotirati i slagati na način da između blokova ne ostaje prazan prostor. 
+                        Kad se jedan red popuni blokovima, on nestaje, a kvadratići koji su bili iznad padaju u novostvoreni prazan prostor. 
+                        Kako tok igre napreduje, blokovi padaju sve brže te igrač ima sve manje vremena za razmišljanje i slaganje. 
+                        Kada se blokovi nagomilaju do vrha polja za igru, bez mogućnosti da se novi blok pojavi, igra je gotova.
+                    </p>
+                </div>
+        
+                <div id="podesavanje">
+                    <div id="blokovi">
+                        Izaberi blokove za igru:
+                        <br><br>
+                        <input type="checkbox" id="0" checked><label for="0" ><img src="./tetris-dodatno/blok1.PNG"></label>
+                        <input type="checkbox" id="1" checked><label for="1" ><img src="./tetris-dodatno/blok2.PNG"></label>
+                        <input type="checkbox" id="2" checked><label for="2" ><img src="./tetris-dodatno/blok3.PNG"></label>
+                        <input type="checkbox" id="3" checked><label for="3" ><img src="./tetris-dodatno/blok4.PNG"></label>
+                        <br><br>
+                        <input type="checkbox" id="4" checked><label for="4" ><img src="./tetris-dodatno/blok5.PNG"></label>
+                        <input type="checkbox" id="5" checked><label for="5" ><img src="./tetris-dodatno/blok6.PNG"></label>
+                        <input type="checkbox" id="6" checked><label for="6" ><img src="./tetris-dodatno/blok7.PNG"></label>        
+                    </div>
+        
+                    <br><br><br>
+        
+                    <div id="nivo">
+                        Nivo igre:
+                        <input type="radio" id="lak" name="nivo" value="lak" checked>
+                        <label for="lak">Lak</label>
+                        <input type="radio" id="srednji" name="nivo" value="srednji">
+                        <label for="srednji">Srednji</label>
+                        <input type="radio" id="tezak" name="nivo" value="tezak">
+                        <label for="tezak">Težak</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="button-group">
+                    <button type="button" class="btn btn-light btn-lg" id="play">Igraj igru</button>
+                    <br>
+                    <button type="button" class="btn btn-light btn-lg" style="margin-top: 40px;">
+                        <a href="tetris-rezultati.html" style="color: black; text-decoration: none; ">Vidi rezultate</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

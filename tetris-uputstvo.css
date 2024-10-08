@@ -1,0 +1,68 @@
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+#logo,#naslov {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    margin-top: 100px;
+}
+
+#uputstvo, #podesavanje{
+    margin-top: 200px;
+}
+
+#logo img {
+    width: 300px;
+    height: 300px;
+}
+
+#naslov img{
+    width: 200px;
+    height: 200px;
+}
+
+.button-group {
+    align-items: center;
+    margin-top: 200px;
+    justify-content: space-between;
+}
+
+.button-group .btn {
+    margin: 0 10px;
+}
+
+#uputstvo, #podesavanje {
+    display: none;
+    text-align: center;
+}
+
+#uputstvo.visible, #podesavanje.visible {
+    display: block;
+}
+  
+  
+.col-md-3{
+    display: flex;
+    justify-content: center;
+}
+  
+#podesavanje{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px
+}
+
+#uputstvo{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px
+}
+
+#blokovi input[type='checkbox']{
+    margin-right: 5px;
+    margin-left: 15px;
+}
